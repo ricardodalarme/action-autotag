@@ -102,6 +102,19 @@ There are several options to customize how the tag is created.
         GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         tag_message: "Custom message goes here."
     ```
+1. `changelog_structure`
+
+    Provide a custom changelog format when not using `tag_message`.
+    This can interpolate strings, supported strings are `{{message}}`, `{{messageHeadline}}`, `{{author}}` and `{{sha}}`.
+    Defaults to `**1) {{message}}** {{author}}\n(SHA: {{sha}})\n`.
+
+    ```yaml
+    - uses: Klemensas/action-autotag@stable
+      with:
+        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        changelog_structure: "**{{messageHeadline}}** {{author}}\n"
+    ```
+
 
 1. `version`
 
