@@ -1,16 +1,16 @@
 name: "Auto tag"
-description: "Automatically generate new tags when the package.json version changes."
-author: "Klemensas"
+description: "Automatically generate new tags when the pubspec.yaml version changes."
+author: "Jacopo Carlini"
 branding:
   icon: "tag"
-  color: "black"
+  color: "blue"
 inputs:
   package_root:
-    description: Autotag will look for the package.json file in in this location.
+    description: Autotag will look for the pubspec.yaml file in in this location.
     required: false
     default: './'
   tag_prefix:
-    description: By default, package.json uses semantic versioning, such as "1.0.0". A prefix can be used to add text before the tag name. For example, if tag_prefx is set to "v", then the tag would be labeled as "v1.0.0".
+    description: By default, pubspec.yaml uses semantic versioning, such as "1.0.0". A prefix can be used to add text before the tag name. For example, if tag_prefx is set to "v", then the tag would be labeled as "v1.0.0".
     required: false
   tag_suffix:
     description: Text which is applied to the end of the tag.
@@ -22,7 +22,7 @@ inputs:
     description: "A string denoting changelog format. Supports `{{message}}`, {{messageHeadline}}, `{{author}}` and `{{sha}}`. Defaults to `**1) {{message}}** {{author}}\n(SHA: {{sha}})\n` Only used when tag_message is empty."
     required: false
   version:
-    description: Explicitly set the version here instead of automatically detecting from `package.json`. Useful for non-JavaScript projects where version may be output by a previous action.
+    description: Explicitly set the version here instead of automatically detecting from `pubspec.yaml`. Useful for non-Flutter projects where version may be output by a previous action.
     required: false
 outputs:
   tagname:
@@ -34,7 +34,7 @@ outputs:
   tagmessage:
     description: The messge applied to the tag reference (this is what shows up on the tag screen on Github).
   version:
-    description: The version, as defined in package.json or explicitly set in the input.
+    description: The version, as defined in pubspec.yaml or explicitly set in the input.
 runs:
   using: "node12"
-  main: "lib/main.js"
+  main: "src/main.js"
