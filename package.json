@@ -1,6 +1,6 @@
 {
   "name": "fluttertag",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Automatically create a tag whenever the version changes in pubspec.yaml",
   "main": "src/main.js",
   "directories": {
