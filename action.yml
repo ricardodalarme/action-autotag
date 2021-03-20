@@ -5,6 +5,9 @@ branding:
   icon: "tag"
   color: "blue"
 inputs:
+  GITHUB_TOKEN:
+    description: "Required for permission to tag the repo."
+    required: true
   package_root:
     description: Autotag will look for the pubspec.yaml file in in this location.
     required: false
