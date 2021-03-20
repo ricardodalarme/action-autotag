@@ -1,17 +1,17 @@
 {
   "name": "fluttertag",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Automatically create a tag whenever the version changes in pubspec.yaml",
   "main": "src/main.js",
   "directories": {
     "lib": "src"
   },
   "dependencies": {
-    "js-yaml": "^4.0.0",
+    "@actions/core": "^1.2.2",
     "@actions/github": "^2.1.0",
-    "@actions/core": "^1.2.2"
+    "core-util-is": "^1.0.2",
+    "js-yaml": "^4.0.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
