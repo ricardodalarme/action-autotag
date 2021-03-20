@@ -1,4 +1,4 @@
-name: "Auto tag"
+name: "Flutter Tag"
 description: "Automatically generate new tags when the pubspec.yaml version changes."
 author: "Jacopo Carlini"
 branding:
