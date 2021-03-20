@@ -110,7 +110,7 @@ There are several options to customize how the tag is created.
 
     Provide a custom changelog format when not using `tag_message`.
     This can interpolate strings, supported strings are `{{message}}`, `{{messageHeadline}}`, `{{author}}` and `{{sha}}`.
-    Defaults to `**1) {{message}}** {{author}}\n(SHA: {{sha}})\n`.
+    Defaults to `**{{message}}** {{sha}})\n`.
 
     ```yaml
     - uses: Klemensas/action-autotag@stable

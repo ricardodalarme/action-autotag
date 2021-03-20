@@ -17,7 +17,7 @@ async function setTagMessage(tagMsg, tags, github, owner, repo, changelogStructu
                 base: latestTag.name,
                 head: 'master',
             });
-            const structure = changelogStructure || `**1) {{message}}** {{author}}\n(SHA: {{sha}})\n`;
+            const structure = changelogStructure || `**{{message}}** {{sha}})\n`;
 
             tagMsg = changelog.data.commits
                 .map(commit =>
