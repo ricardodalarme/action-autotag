@@ -1,5 +1,5 @@
 name: "Flutter Auto Tag"
-description: "Automatically generate new tags when the pubspec.yaml version changes."
+description: "Automatically bumps the version in the pubspec.yaml"
 author: "Jacopo Carlini"
 branding:
   icon: "tag"
