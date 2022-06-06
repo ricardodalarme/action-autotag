@@ -15,7 +15,7 @@ This tag works well in combination with:
 
 ## Usage
 
-The following is an example `.github/workflows/main.yml` that will execute when a `push` to the `master` branch occurs.
+The following is an example `.github/workflows/main.yml` that will execute when a `push` to the `main` branch occurs.
 
 ```yaml
 name: Create Tag
@@ -23,7 +23,7 @@ name: Create Tag
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
