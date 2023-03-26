@@ -87,7 +87,7 @@ async function run() {
             .join('\n -> ')}`);
 
         let pkg = loadPubspec();
-        let version = pkg.version.split('\+')[0];
+        let version = pkg.version;
         core.setOutput('version', version);
         core.debug(` Detected version ${version}`);
 
