@@ -6,10 +6,12 @@ on:
       - main
 
 jobs:
-  build:
+  create-tag:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v3
-      - uses: Klemensas/action-autotag@stable
-        with:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+      - uses: butlerlogic/action-autotag@stable
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
