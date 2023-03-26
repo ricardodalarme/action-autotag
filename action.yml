@@ -1,6 +1,6 @@
-name: "Flutter Auto Tag"
+name: "Pub Auto Tag"
 description: "Automatically bumps the version in the pubspec.yaml"
-author: "Jacopo Carlini"
+author: "Ricardo Dalarme"
 branding:
   icon: "tag"
   color: "blue"
@@ -11,7 +11,7 @@ inputs:
   package_root:
     description: Autotag will look for the pubspec.yaml file in in this location.
     required: false
-    default: './'
+    default: "./"
   tag_prefix:
     description: By default, pubspec.yaml uses semantic versioning, such as "1.0.0". A prefix can be used to add text before the tag name. For example, if tag_prefx is set to "v", then the tag would be labeled as "v1.0.0".
     required: false
