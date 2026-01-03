@@ -39,5 +39,5 @@ outputs:
   version:
     description: The version, as defined in pubspec.yaml or explicitly set in the input.
 runs:
-  using: "node12"
-  main: "src/main.js"
+  using: "node20"
+  main: "dist/index.js"
